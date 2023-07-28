@@ -21,6 +21,7 @@
   - http://meteobox.tk/files/AM2302.pdf
 
   Changelog:
+   2023-07-28: Slow DHT22 variant
    2013-06-10: Initial version
    2013-06-12: Refactored code
    2013-07-01: Add a resetTimer method
@@ -44,7 +45,8 @@ public:
     DHT11,
     DHT22,
     AM2302,  // Packaged DHT22
-    RHT03    // Equivalent to DHT22
+    RHT03,    // Equivalent to DHT22
+    DHT22_SLOW // Slow DHT22 variant
   }
   DHT_MODEL_t;
 

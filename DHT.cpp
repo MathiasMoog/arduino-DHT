@@ -21,6 +21,7 @@
   - http://meteobox.tk/files/AM2302.pdf
 
   Changelog:
+   2023-07-28: Slow DHT22 variant
    2013-06-10: Initial version
    2013-06-12: Refactored code
    2013-07-01: Add a resetTimer method
@@ -126,7 +127,7 @@ void DHT::readSensor()
 
   digitalWrite(pin, LOW); // Send start signal
   pinMode(pin, OUTPUT);
-  if ( model == DHT11 ) {
+  if ( model == DHT11 || model == DHT22_SLOW ) {
     delay(18);
   }
   else {

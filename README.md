@@ -8,6 +8,7 @@ Written by Mark Ruys, <mark@paracas.nl>.
 Features
 --------
   - Support for DHT11 and DHT22, AM2302, RHT03
+  - Support for slow DHT22 with longer timeouts added by Mathias Moog
   - Auto detect sensor model
   - Low memory footprint
   - Very small code
